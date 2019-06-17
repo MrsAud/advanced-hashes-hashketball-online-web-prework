@@ -214,9 +214,15 @@ def big_shoe_rebounds
 end
 
 def most_points_scored
+  most_points = 0
+  vip = ""
   game_hash.each do |location, team_data|
     team_data[:players].each do |stat|
       # if stat[:points] is the biggest, return stat[:player_name]
+      if stat[:points] > most_points
+        most_points = stat[:points]
+        vip = stat[:player_name]
+      end
     end
   end
 end
