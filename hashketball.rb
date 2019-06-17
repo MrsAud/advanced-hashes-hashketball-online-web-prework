@@ -222,9 +222,11 @@ def player_with_longest_name
     team_data[:players].each do |stat, value|
       if stat[:shoe] > shoe_size
         shoe_size = stat[:shoe]
-      # find method for determining string length, return player name
+        rebound = stat[:rebounds]
+      end
     end
   end
+  rebound
 end
 
 def long_name_steals_a_ton?
