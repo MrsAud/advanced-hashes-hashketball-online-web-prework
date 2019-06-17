@@ -220,7 +220,7 @@ def player_with_longest_name
   rebound = 0
   game_hash.each do |location, team_data|
     team_data[:players].each do |stat, value|
-      if 
+      if stat[:shoe] > shoe_size
       # find method for determining string length, return player name
     end
   end
