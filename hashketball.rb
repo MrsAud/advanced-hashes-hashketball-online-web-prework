@@ -198,3 +198,31 @@ def player_stats(name)
   end
   stats
 end
+
+def big_shoe_rebounds
+  game_hash.each do |location, team_data|
+    team_data[:players].each do |stat|
+      # if stat[:shoe] is the biggest, return stat[:rebounds]
+    end
+  end
+end
+
+def most_points_scored
+  game_hash.each do |location, team_data|
+    team_data[:players].each do |stat|
+      # if stat[:points] is the biggest, return stat[:player_name]
+    end
+  end
+end
+
+def player_with_longest_name
+  game_hash.each do |location, team_data|
+    team_data[:players].each do |stat|
+      # find method for determining string length, return player name
+    end
+  end
+end
+
+def long_name_steals_a_ton?
+  # player_with_longest_name have the most steals (variation of most_points_scored)?
+end
