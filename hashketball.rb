@@ -219,7 +219,7 @@ def player_with_longest_name
   shoe_size = 0
   rebound = 0
   game_hash.each do |location, team_data|
-    team_data[:players].each do |stat, value|
+    team_data[:players].each do |stat|
       if stat[:shoe] > shoe_size
         shoe_size = stat[:shoe]
         rebound = stat[:rebounds]
