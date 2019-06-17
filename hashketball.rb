@@ -216,10 +216,11 @@ def most_points_scored
 end
 
 def player_with_longest_name
-  shoe = 0
+  shoe_size = 0
   rebound = 0
   game_hash.each do |location, team_data|
-    team_data[:players].each do |stat|
+    team_data[:players].each do |stat, value|
+      if 
       # find method for determining string length, return player name
     end
   end
