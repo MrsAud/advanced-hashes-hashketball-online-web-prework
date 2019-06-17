@@ -200,22 +200,6 @@ def player_stats(name)
 end
 
 def big_shoe_rebounds
-  game_hash.each do |location, team_data|
-    team_data[:players].each do |stat|
-      # if stat[:shoe] is the biggest, return stat[:rebounds]
-    end
-  end
-end
-
-def most_points_scored
-  game_hash.each do |location, team_data|
-    team_data[:players].each do |stat|
-      # if stat[:points] is the biggest, return stat[:player_name]
-    end
-  end
-end
-
-def player_with_longest_name
   shoe_size = 0
   rebound = 0
   game_hash.each do |location, team_data|
@@ -227,6 +211,18 @@ def player_with_longest_name
     end
   end
   rebound
+end
+
+def most_points_scored
+  game_hash.each do |location, team_data|
+    team_data[:players].each do |stat|
+      # if stat[:points] is the biggest, return stat[:player_name]
+    end
+  end
+end
+
+def player_with_longest_name
+
 end
 
 def long_name_steals_a_ton?
